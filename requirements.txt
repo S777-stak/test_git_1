@@ -1,2 +1,0 @@
-requiests
-sqlalchemy==1.4.13
