@@ -1,16 +1,11 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+bigno_blacklist = ["John Dow", "John Row", "John Flow"]
+poker_blacklist = ["Nick Dow", "John Row", "Nick Flow"]
+majong_blacklist = ["Jina Dow", "John Row", "Jina Flow"]
+blacklist = []
+for i in bigno_blacklist:
+        for j in poker_blacklist:
+            for k in majong_blacklist:
+                if i == j == k:
+                    blacklist.append(i)
+                    break
+print(blacklist)
